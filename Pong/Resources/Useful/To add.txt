@@ -1,0 +1,15 @@
+ bool IsWindowFullscreen(void);                              // Check if window is currently fullscreen
+
+ void ToggleFullscreen(void);                                // Toggle window state: fullscreen/windowed (only PLATFORM_DESKTOP)
+
+ void SetWindowMonitor(int monitor);                         // Set monitor for the current window (fullscreen mode)
+
+ void OpenURL(const char *url);                              // Open URL with default system browser (if available)
+
+
+
+
+* Alocate buttons on screen:
+* take size of button, size of screen ,screen size - empty space in between buttons and divide that x amount of buttons and that will give you the size wanted. 
+* Ej: (screen Height - 400) / 4buttons = x
+* Button height = x;
